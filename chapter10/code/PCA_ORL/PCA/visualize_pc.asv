@@ -1,0 +1,43 @@
+function visualize_pc(E)
+% 显示主成分分量（主成分脸，即变换空间中的基向量）
+%
+% 输入：E --- 矩阵，每一列是一个主成分分量
+
+
+[size1 size2] = size(E);
+global imgRow;
+global imgCol;
+row = imgRow;
+col = imgCol;
+
+if size2 ~= 20
+   error('只用于显示 20 个主成分');
+end;
+
+figure
+img = zeros(row, col);
+for ii = 1:20
+    img(:) = E(:, ii);
+    subplot(4, 5, ii);
+    imshow(img, []);
+end
+
+c1 = zeros(row,col*5);
+c2 = c1;
+c3 = c1;
+c4 = c1;
+c1(:) = E(:,1:5);
+c2(:) = E(:,6:10);
+c3(:) = E(:,11:15);
+c4(:) = E(:,16:20);
+size(c1)
+
+composite=zeros(row*4,col*5);
+composite(:)=[c1;c2;c3;c4];
+
+figure;
+imshow(composite, []);
+
+m=min(min(composite));
+M =max(max(composite));
+imwrite(uint8((composite-m)*(255/(M-m))),'composite.tiff');

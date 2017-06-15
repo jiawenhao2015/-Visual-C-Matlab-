@@ -1,0 +1,68 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DigitRec - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP381.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/DigitRec.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\partimeJobs\ebook\DIPREC\disk\chapter12\DigitRec\OCRImageProcess\Img.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP381.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP382.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/DigitRec.pdb" /debug /machine:I386 /out:"Debug/DigitRec.exe" /pdbtype:sept 
+.\Debug\DigitRec.obj
+.\Debug\DigitRecDoc.obj
+.\Debug\DigitRecView.obj
+.\Debug\Img.obj
+.\Debug\ImgProcess.obj
+.\Debug\MainFrm.obj
+.\Debug\NeuralData.obj
+.\Debug\neuralnet.obj
+.\Debug\OCRImgProcess.obj
+.\Debug\PreprocessDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\TestDialog.obj
+.\Debug\TrainDlg.obj
+.\Debug\ValueTrack.obj
+.\Debug\Vector2D.obj
+.\Debug\DigitRec.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP382.tmp"
+<h3>Output Window</h3>
+Compiling...
+Img.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP383.tmp" with contents
+[
+/nologo /o"Debug/DigitRec.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\DigitRec.sbr
+.\Debug\DigitRecDoc.sbr
+.\Debug\DigitRecView.sbr
+.\Debug\Img.sbr
+.\Debug\ImgProcess.sbr
+.\Debug\MainFrm.sbr
+.\Debug\NeuralData.sbr
+.\Debug\neuralnet.sbr
+.\Debug\OCRImgProcess.sbr
+.\Debug\PreprocessDlg.sbr
+.\Debug\TestDialog.sbr
+.\Debug\TrainDlg.sbr
+.\Debug\ValueTrack.sbr
+.\Debug\Vector2D.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP383.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+DigitRec.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
